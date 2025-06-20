@@ -1,6 +1,6 @@
 runner:
   name: Uncover
-  description: Dscover exposed hosts on the internet.
+  description: Discover exposed assets on the internet using multiple search engines.
   version: 0.0.1
 
 build:
