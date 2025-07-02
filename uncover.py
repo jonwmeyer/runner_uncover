@@ -22,7 +22,7 @@ def main():
     
     activate_venv()
     
-    print(f"[*] Starting uncover query_location uncover for: {query_location}")
+    print(f"[*] Starting uncover query for: {query_location}")
     exit_code = run_uncover_and_save(query_location)
     
     if exit_code == 0:
