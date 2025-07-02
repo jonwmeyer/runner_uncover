@@ -21,10 +21,10 @@ build:
     echo "END: Building uncover"
 
 webform:
-  - name: location
-    prompt: LOCATION
+  - name: query_string
+    prompt: QUERY STRING
     type: text
 
 launch:
   type: binary
-  command: python3 uncover.py ${location}
+  command: python3 uncover.py ${query_string}
