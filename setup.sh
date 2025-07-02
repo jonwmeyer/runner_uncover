@@ -9,7 +9,6 @@
     export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
     export GO111MODULE=on
     export CGO_ENABLED=1
-    export SHODAN_API_KEY=1WSR9UcKwjrD2ReQtGhVrGbFqVtyVnL4
     mkdir -p /go/src
     mkdir -p /go/bin
     go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest

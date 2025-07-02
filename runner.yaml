@@ -1,5 +1,5 @@
 runner:
-  name: uncover
+  name: Uncover
   description: Discover exposed hosts on the internet.
   version: 0.0.1
 
