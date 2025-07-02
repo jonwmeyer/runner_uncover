@@ -1,11 +1,11 @@
 runner:
-  name: Alterx
-  description: Subdomain wordlist generator.
+  name: uncover
+  description: Discover exposed hosts on the internet.
   version: 0.0.1
 
 build:
   commands: |
-    echo "START: Building Alterx"
+    echo "START: Building uncover"
     apt update
     apt install -y build-essential ca-certificates wget unzip git
     apt install -y python3 python3-pip python-is-python3
@@ -17,14 +17,14 @@ build:
     ENV CGO_ENABLED=1
     mkdir -p /go/src
     mkdir -p /go/bin
-    go install github.com/projectdiscovery/alterx/cmd/alterx@latest    
-    echo "END: Building Alterx"
+    go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest    
+    echo "END: Building uncover"
 
 webform:
-  - name: subdomain
-    prompt: SUBDOMAIN
+  - name: location
+    prompt: LOCATION
     type: text
 
 launch:
   type: binary
-  command: python3 alterx.py ${subdomain}
+  command: python3 uncover.py ${location}

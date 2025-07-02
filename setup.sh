@@ -11,5 +11,5 @@
     export CGO_ENABLED=1
     mkdir -p /go/src
     mkdir -p /go/bin
-    go install github.com/projectdiscovery/alterx/cmd/alterx@latest
+    go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
     echo "END: Building Alterx"
